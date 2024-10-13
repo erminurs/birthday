@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="content">
+        <h2>Halo, aku punya sesuatu nih buat kamu.</h2>
+        <button onclick="playMusic()" id="openPopup1">Click Me</button>
+        <audio id="backgroundMusic" src="asset/birthday_song.mp3" preload="auto"></audio>
+    </div>
+
+    <!-- First Popup -->
+    <div id="popup1" class="popup">
+        <div class="popup-content">
+            <span class="close" id="closePopup1">&times;</span>
+            <h2>🎉 Happy Birthday!</h2>
+            <button id="openPopup2">Click Again</button>
+        </div>
+    </div>
+
+    <!-- Second Popup -->
+    <div id="popup2" class="popup">
+        <div class="popup-content">
+            <span class="close" id="closePopup2">&times;</span>
+            <p>Kamu semakin tua, tapi ingat, itu hanya angka... dan angka itu sangat besar!</p>
+            <button id="openPopup3">Click Again</button>
+        </div>
+    </div>
+    <div id="popup3" class="popup">
+        <div class="popup-content">
+            <span class="close" id="closePopup3">&times;</span>
+            <p>Jangan khawatir tentang bertambahnya usia, karena kamu masih terlihat muda... jika dilihat dari jauh!</p>
+            <button id="openPopup4">Click Again</button>
+        </div>
+    </div>
+    <div id="popup4" class="popup">
+        <div class="popup-content">
+            <span class="close" id="closePopup4">&times;</span>
+            <p>Semoga semua keinginanmu tercapai, kecuali yang aneh-aneh... jangan berlebihan, ya!</p>
+            <button id="openPopup5">Click Again</button>
+        </div>
+    </div>
+    <div id="popup5" class="popup">
+        <div class="popup-content">
+            <span class="close" id="closePopup5">&times;</span>
+            <p>"HBD to my fave human! 🎉🎂 Semoga makin glowing, vibes-nya makin positive, and hidupnya makin aesthetic!✨💖 #BirthdayGoals #StayAwesome"</p>
+            <button id="openPopup6">Love u banyak banyakkk</button>
+        </div>
+    </div>
+    <div id="popup6" class="popup">
+        <div class="popup-content">
+            <span class="close" id="closePopup6">&times;</span>
+            <img src="asset/love.jpg" alt="" class="popup-image ">
+        </div>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

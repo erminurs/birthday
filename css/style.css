@@ -1,0 +1,83 @@
+body {
+    height: 100vh; /* Mengatur tinggi viewport */
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Memusatkan secara horizontal */
+    align-items: center; /* Memusatkan secara vertikal */
+    background-color: #f4c5c9; /* Warna latar belakang */
+    font-size: 16px;
+}
+
+.content{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h2{
+    color: #be535d;
+}
+
+button{
+    background-color: #be535d;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Popup container */
+.popup {
+    display: none; /* Initially hidden */
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.5); /* Background overlay */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Popup content */
+.popup-content {
+    position: relative;
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+    z-index: 100; /* Ensure it sits above the background */
+    text-align: center;
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    cursor: pointer;
+}
+
+.popup-image {
+    width: 100%; /* Gambar mengambil lebar penuh popup */
+    height: auto; /* Tinggi otomatis untuk menjaga proporsi */
+}
+
+@media (max-width: 601px) {
+    .popup-content {
+        width: 150px;
+    }
+}
